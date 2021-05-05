@@ -1,7 +1,7 @@
 <p>
-  <a href="https://www.npmjs.com/package/@roa/ui">
+  <a href="https://www.npmjs.com/package/@roa-ai/ui">
     <img
-      src="https://img.shields.io/npm/v/@roa/ui.svg"
+      src="https://img.shields.io/npm/v/@roa-ai/ui.svg"
       alt="npm"
     >
   </a>
@@ -38,7 +38,7 @@ It also features:
 ## Install
 
 ```
-npm install --save @roa/ui
+npm install --save @roa-ai/ui
 ```
 
 ## Development
@@ -72,11 +72,11 @@ npm run storybook:deploy
 ## Usage
 
 ```tsx
-import React from "react";
-import { Button } from "@roa/ui";
+import React from 'react';
+import { Button } from '@roa-ai/ui';
 
 const Example = () => (
-  <Button text="Hello Roa 👋" onClick={() => console.log("Hello Roa 👍")} />
+  <Button text="Hello Roa 👋" onClick={() => console.log('Hello Roa 👍')} />
 );
 
 export default Example;

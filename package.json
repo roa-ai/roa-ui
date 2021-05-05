@@ -1,7 +1,7 @@
 {
-  "name": "@roa/ui",
+  "name": "@roa-ai/ui",
   "description": "로아 디자인 시스템",
-  "version": "0.9.0",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -23,6 +23,7 @@
     "storybook"
   ],
   "scripts": {
+    "publish": "npm publish --access public",
     "prepublishOnly": "npm run build",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
@@ -92,7 +93,7 @@
   "author": "roa",
   "license": "MIT",
   "prettier": {
-    "printWidth": 100,
+    "printWidth": 80,
     "arrowParens": "avoid",
     "semi": true,
     "singleQuote": true

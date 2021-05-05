@@ -1,7 +1,7 @@
 {
   "name": "@roa-ai/ui",
   "description": "로아 디자인 시스템",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

@@ -27,7 +27,7 @@ const IconButton: React.FC<IProps> = ({
   return (
     <StyledIconButton variant={variant} disabled={disabled} onClick={onClick}>
       {icon}
-      <Ripple />
+      {!disabled && <Ripple />}
     </StyledIconButton>
   );
 };

@@ -31,7 +31,7 @@ const Button: React.FC<IProps> = ({
     <StyledButton variant={variant} disabled={disabled} onClick={onClick}>
       {icon && <Icon>{icon}</Icon>}
       {text}
-      <Ripple />
+      {!disabled && <Ripple />}
     </StyledButton>
   );
 };

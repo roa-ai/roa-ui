@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import useDebouncedRippleCleanUp from "./useDebouncedRippleCleanUp";
+import useDebouncedRippleCleanUp from './useDebouncedRippleCleanUp';
 
 interface IRipple {
   id: number;
@@ -15,7 +15,7 @@ interface IProps {
   color?: string;
 }
 
-const Ripple: React.FC<IProps> = ({ duration = 850, color = "#fff" }) => {
+const Ripple: React.FC<IProps> = ({ duration = 850, color = '#fff' }) => {
   const [rippleArray, setRippleArray] = useState<IRipple[]>([]);
 
   useDebouncedRippleCleanUp(rippleArray.length, duration, () => {
@@ -23,6 +23,7 @@ const Ripple: React.FC<IProps> = ({ duration = 850, color = "#fff" }) => {
   });
 
   const addRipple = (event: React.MouseEvent) => {
+    console.log('ripple');
     const rippleContainer = event.currentTarget.getBoundingClientRect();
 
     const size =

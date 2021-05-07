@@ -8,31 +8,39 @@ export default {
   component: Radio,
 } as Meta;
 
-const Template: Story<IProps> = args => {
-  const [gender, setGender] = useState('male');
+const Template: Story<IProps> = ({ name, disabled }) => {
+  const [gender, setGender] = useState(name);
   function handleChange() {
     setGender(prev => (prev === 'male' ? 'female' : 'male'));
   }
   return (
     <>
-      <Radio name="male" checked={gender === 'male'} onChange={handleChange} />
+      <Radio
+        name="male"
+        checked={gender === 'male'}
+        disabled={disabled}
+        onChange={handleChange}
+      />
       <Radio
         name="female"
         checked={gender === 'female'}
+        disabled={disabled}
         onChange={handleChange}
       />
     </>
   );
 };
 
-export const EnabledSelected = Template.bind({});
-EnabledSelected.args = {
+export const Enabled = Template.bind({});
+Enabled.args = {
   name: 'male',
   checked: true,
+  disabled: false,
 } as IProps;
 
-export const EnabledUnselected = Template.bind({});
-EnabledUnselected.args = {
-  name: 'radio-2',
+export const Disabled = Template.bind({});
+Disabled.args = {
+  name: 'male',
   checked: false,
+  disabled: true,
 } as IProps;

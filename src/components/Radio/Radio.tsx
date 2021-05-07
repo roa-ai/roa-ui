@@ -63,7 +63,7 @@ const Root = styled.span`
   color: #fff;
   text-align: center;
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  overflow: visible;
+  overflow: hidden;
 `;
 const Label = styled.label`
   display: flex;
@@ -83,7 +83,11 @@ const Input = styled.input.attrs({
   height: 100%;
   cursor: inherit;
   opacity: 0;
+  cursor: pointer;
   z-index: 1;
+  :disabled {
+    cursor: not-allowed;
+  }
 `;
 const Box = styled.span`
   position: relative;
@@ -99,6 +103,9 @@ const Icon = styled.span`
   transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   flex-shrink: 0;
   user-select: none;
+  ${Input}:disabled + ${Box} & {
+    background-color: rgba(31, 31, 32, 0.1);
+  }
 `;
 const Circle = styled.svg<{ checked: boolean }>`
   position: absolute;
@@ -111,6 +118,9 @@ const Circle = styled.svg<{ checked: boolean }>`
   fill: currentColor;
   transition: transform 150ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   transform: ${p => (p.checked ? 'scale(1)' : 'scale(0)')};
+  ${Input}:disabled + ${Box} & {
+    color: rgba(31, 31, 32, 0.1);
+  }
 `;
 
 export default Radio;

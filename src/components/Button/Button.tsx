@@ -10,7 +10,7 @@ export interface IProps {
   /** 타입 */
   variant: VariantTypes;
   /** 상태 */
-  disabled: boolean;
+  disabled?: boolean;
   /** 아이콘 */
   icon?: React.ReactNode;
   /** 내용 */

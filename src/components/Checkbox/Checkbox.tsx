@@ -3,12 +3,11 @@ import styled from 'styled-components';
 
 import * as theme from '../../shared/styles';
 import iconCheck from '../../assets/icons/check.svg';
+import Ripple from '../Ripple';
 
 export interface IProps {
   /** input 이름 */
   name: string;
-  /** 텍스트 라벨 */
-  label?: string;
   /** 체크 여부 */
   checked: boolean;
   /** 비활성 여부 */
@@ -20,7 +19,6 @@ export interface IProps {
 /** `Checkbox`는 true/false를 기준으로 체크 여부를 확인합니다. */
 const Checkbox: React.FC<IProps> = ({
   name,
-  label,
   checked = false,
   disabled = false,
   onChange,
@@ -33,7 +31,7 @@ const Checkbox: React.FC<IProps> = ({
         disabled={disabled}
         onChange={onChange}
       />
-      <Text>{label}</Text>
+      <Text />
     </Label>
   );
 };

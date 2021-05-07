@@ -18,7 +18,12 @@ export interface IProps {
 }
 
 /** `IconButton` 컴포넌트는 어떠한 작업을 실행할 때 사용됩니다. */
-const IconButton: React.FC<IProps> = ({ variant = 'text', disabled = false, icon, onClick }) => {
+const IconButton: React.FC<IProps> = ({
+  variant = 'text',
+  disabled = false,
+  icon,
+  onClick,
+}) => {
   return (
     <StyledIconButton variant={variant} disabled={disabled} onClick={onClick}>
       {icon}
@@ -99,7 +104,7 @@ const StyledIconButton = styled.button<{ variant?: VariantTypes }>`
         box-shadow: 1px 2px 4px #9e9e9e;
       }
       :focus {
-        background-color: #6200ee;
+        background-color: #461aea;
       }
     `}
 `;

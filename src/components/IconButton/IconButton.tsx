@@ -8,9 +8,9 @@ type VariantTypes = 'text' | 'outlined' | 'contained';
 
 export interface IProps {
   /** 타입 */
-  variant: VariantTypes;
+  variant?: VariantTypes;
   /** 상태 */
-  disabled: boolean;
+  disabled?: boolean;
   /** 아이콘 */
   icon: React.ReactNode;
   /** 클릭했을 때 호출할 함수 */

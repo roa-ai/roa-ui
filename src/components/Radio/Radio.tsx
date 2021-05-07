@@ -7,7 +7,7 @@ export interface IProps {
   /** input 이름 */
   name: string;
   /** 체크 여부 */
-  checked: boolean;
+  checked?: boolean;
   /** 비활성 여부 */
   disabled?: boolean;
   /** 상태 변경시 호출 함수 */

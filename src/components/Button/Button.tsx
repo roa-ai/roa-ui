@@ -8,7 +8,7 @@ type VariantTypes = 'text' | 'outlined' | 'contained';
 
 export interface IProps {
   /** 타입 */
-  variant: VariantTypes;
+  variant?: VariantTypes;
   /** 상태 */
   disabled?: boolean;
   /** 아이콘 */

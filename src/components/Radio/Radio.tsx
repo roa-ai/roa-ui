@@ -14,7 +14,7 @@ export interface IProps {
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-/** `Radio`는 true/false를 기준으로 체크 여부를 확인합니다. */
+/** `Radio` 버튼을 사용하면 사용자가 세트에서 하나의 옵션을 선택할 수 있습니다. */
 const Radio: React.FC<IProps> = ({
   name,
   checked = false,

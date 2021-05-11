@@ -45,6 +45,7 @@ export const color = {
   black: '#000000',
   white: '#ffffff',
   red: '#DA1E28',
+  gray: '#333',
 
   // shade
   gray100: '#121619',

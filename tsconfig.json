@@ -19,11 +19,5 @@
     "declarationDir": "dist"
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "storybook-static",
-    "src/**/*.stories.tsx",
-    "src/**/*.test.tsx"
-  ]
+  "exclude": ["node_modules", "dist", "storybook-static", "src/**/*.test.tsx"]
 }

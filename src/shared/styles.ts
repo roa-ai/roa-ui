@@ -24,7 +24,7 @@ export const typography = {
     h6: 20,
     s1: 16,
     s2: 14,
-    b1: 16,
+    b1: 18,
     b2: 14,
     link: 16,
     bt1: 14,

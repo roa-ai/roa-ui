@@ -40,6 +40,7 @@ export const color = {
   secondary: '#0095F6',
   label: '#262626',
   background: '#fffffff',
+  badgeRed: '#ff4d4f',
 
   // basic
   black: '#000000',

@@ -1,6 +1,7 @@
 import React, { CSSProperties } from 'react';
 import styled, { css } from 'styled-components';
 
+import * as theme from '../../shared/styles';
 import { countSizeStyle } from './styles';
 
 export type SizeType = 'small' | 'default';
@@ -47,15 +48,15 @@ const Count = styled.sup<{ size: SizeType; wide: boolean }>`
   transform-origin: 100% 0%;
   transform: translate(50%, -50%);
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid ${theme.color.white};
   ${p => countSizeStyle(p.size)}
   ${p =>
     p.wide &&
     css`
       padding: 0 6px;
     `}
-  background-color: #ff4d4f;
-  color: #fff;
+  background-color: ${theme.color.badgeRed};
+  color: ${theme.color.white};
   z-index: auto;
 `;
 
